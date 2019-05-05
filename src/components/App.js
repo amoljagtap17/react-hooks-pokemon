@@ -1,9 +1,14 @@
 import React from 'react'
-import PokeCard from 'components/PokeCard/PokeCard'
+import PokeDeck from 'components/PokeDeck/PokeDeck'
+import pokemonData from 'utils/pokemonData'
 
 const App = () => {
   return (
-    <PokeCard id={2} name="test" type="testType" exp={240} />
+    <PokeDeck
+      pokemons={pokemonData}
+      exp={245}
+      isWinner={true}
+    />
   )
 }
 
