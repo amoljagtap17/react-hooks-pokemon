@@ -1,11 +1,10 @@
 import React from 'react'
-
-import styles from 'components/App.module.scss'
+import PokeCard from 'components/PokeCard/PokeCard'
 
 const App = () => {
-  console.log('test', process.env.REACT_APP_NAME)
-
-  return <div className={styles['text']}>App!</div>
+  return (
+    <PokeCard id={2} name="test" type="testType" exp={240} />
+  )
 }
 
 export default App
