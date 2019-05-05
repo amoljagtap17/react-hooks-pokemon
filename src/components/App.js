@@ -1,15 +1,7 @@
 import React from 'react'
-import PokeDeck from 'components/PokeDeck/PokeDeck'
+import PokeGame from 'components/PokeGame/PokeGame'
 import pokemonData from 'utils/pokemonData'
 
-const App = () => {
-  return (
-    <PokeDeck
-      pokemons={pokemonData}
-      exp={245}
-      isWinner={true}
-    />
-  )
-}
+const App = () => <PokeGame pokemonData={pokemonData} />
 
 export default App
